@@ -7,7 +7,7 @@ namespace UserRegistrationProblem
         static void Main(string[] args)
         {
             UserRegistration userregistration = new UserRegistration();
-            bool checkpassword = userregistration.CheckUserPassword("SiDdhanT17");
+            bool checkpassword = userregistration.CheckUserPassword("SiDdhanT@17");
             Console.WriteLine(checkpassword);
 
         }

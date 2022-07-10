@@ -12,9 +12,10 @@ namespace TestProject
         }
 
         [Test]
-        public void CheckMobileNumber()
+        //Testing the Password that should have min 8 characters with atleast 1 UpperCase,1 NumericNumber & 1 SpecialCharcter
+        public void ChecKUserPassword()
         {
-            string password = "SidDhanT23";
+            string password = "SidDhanT@23";
             UserRegistration userregist = new UserRegistration();
             var result = userregist.CheckUserPassword(password);
            
