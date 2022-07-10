@@ -12,11 +12,11 @@ namespace TestProject
         }
 
         [Test]
-        public void CheckEmail()
+        public void CheckMobileNumber()
         {
-            string email = "Siddhant.shrivastava@gmail.co.in";
+            string mobnumber = "91 9923443332";
             UserRegistration userregist = new UserRegistration();
-            var result = userregist.CheckEmail(email);
+            var result = userregist.CheckMobileNumber(mobnumber);
            
 
             Assert.IsTrue(result);

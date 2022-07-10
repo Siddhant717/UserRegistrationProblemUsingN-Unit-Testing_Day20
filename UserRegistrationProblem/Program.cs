@@ -7,8 +7,8 @@ namespace UserRegistrationProblem
         static void Main(string[] args)
         {
             UserRegistration userregistration = new UserRegistration();
-            bool checklastname = userregistration.CheckEmail("Siddhant.shrivastava@gmail.co.in");
-            Console.WriteLine(checklastname);
+            bool checkmobnum = userregistration.CheckMobileNumber("91 9933222454");
+            Console.WriteLine(checkmobnum);
 
         }
     }

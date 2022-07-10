@@ -9,14 +9,14 @@ namespace UserRegistrationProblem
 {
     public class UserRegistration
     {
-        public bool CheckEmail(string email)
+        public bool CheckMobileNumber(string mobilenumber)
         {
 
-            string EmailPattern = @"^([A-Za-z]{3,}([.a-z]*)@[a-z]{2,}[.][a-z]{2,3}([.a-z]*))$";
+            string MobileNumberPattern = @"^[1-9]{2,}[' '][7-9]{1}[0-9]{9}$";
 
-            Regex Emailregex = new Regex(EmailPattern);
+            Regex MobileNumberregex = new Regex(MobileNumberPattern);
 
-            return Emailregex.IsMatch(email);
+            return MobileNumberregex.IsMatch(mobilenumber);
         }
     }
 }
