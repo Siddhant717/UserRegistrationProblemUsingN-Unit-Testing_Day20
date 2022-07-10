@@ -12,13 +12,13 @@ namespace TestProject
         }
 
         [Test]
-        public void CheckLastName()
+        public void CheckEmail()
         {
-            string lasttName = "Shrivastava";
+            string email = "Siddhant.shrivastava@gmail.co.in";
             UserRegistration userregist = new UserRegistration();
-            var result = userregist.CheckLastName(lasttName);
+            var result = userregist.CheckEmail(email);
+           
 
-            //Assert
             Assert.IsTrue(result);
 
         }
