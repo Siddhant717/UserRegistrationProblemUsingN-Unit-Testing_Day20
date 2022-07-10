@@ -9,14 +9,14 @@ namespace UserRegistrationProblem
 {
     public class UserRegistration
     {
-        public bool CheckLasttName(string lastName)
+        public bool CheckLastName(string lasttName)
         {
-            
-            string LasttNamePattern = @"^[A-Z]{1}[a-z]{2,}$";
+     
+            string LasttNamePattern = @"^[A-Z]{1}[a-zA-Z]{2,}$";
 
-            Regex lasttnameregex = new Regex(LasttNamePattern);
+            Regex lastnameregex = new Regex(LasttNamePattern);
 
-           return lasttnameregex.IsMatch(lastName);
+            return lastnameregex.IsMatch(lasttName);
         }
     }
 }
