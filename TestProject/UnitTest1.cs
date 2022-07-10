@@ -12,12 +12,12 @@ namespace TestProject
         }
 
         [Test]
-        //Testing the Password that should have min 8 characters with atleast 1 UpperCase,1 NumericNumber & 1 SpecialCharcter
-        public void ChecKUserPassword()
+        
+        public void ChecKEmailSample()
         {
-            string password = "SidDhanT@23";
+            string EmailSample = "abc.100@abc.com.au";
             UserRegistration userregist = new UserRegistration();
-            var result = userregist.CheckUserPassword(password);
+            var result = userregist.CheckEmailSample(EmailSample);
            
 
             Assert.IsTrue(result);
