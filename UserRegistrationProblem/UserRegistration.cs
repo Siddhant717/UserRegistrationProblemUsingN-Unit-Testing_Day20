@@ -9,14 +9,14 @@ namespace UserRegistrationProblem
 {
     public class UserRegistration
     {
-        public bool CheckFirstName(string firstName)
+        public bool CheckLasttName(string lastName)
         {
-            //First name starts with capital and should have min 3 characters
-            string FirstNamePattern = @"^[A-Z]{1}[a-zA-Z]{2,}$";
+            
+            string LasttNamePattern = @"^[A-Z]{1}[a-z]{2,}$";
 
-            Regex firstnameregex = new Regex(FirstNamePattern);
+            Regex lasttnameregex = new Regex(LasttNamePattern);
 
-           return firstnameregex.IsMatch(firstName);
+           return lasttnameregex.IsMatch(lastName);
         }
     }
 }

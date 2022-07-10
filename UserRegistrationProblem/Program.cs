@@ -7,8 +7,8 @@ namespace UserRegistrationProblem
         static void Main(string[] args)
         {
             UserRegistration userregistration = new UserRegistration();
-           bool checkfirstname= userregistration.CheckFirstName("Siddhant");
-            Console.WriteLine(checkfirstname);
+           bool checklastname= userregistration.CheckLasttName("Shrivastava");
+            Console.WriteLine(checklastname);
 
         }
     }
