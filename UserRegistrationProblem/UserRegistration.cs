@@ -9,11 +9,11 @@ namespace UserRegistrationProblem
 {
     public class UserRegistration
     {
-        // method that check password should have minimum 8 characters and atleast 1 UpperCase
+        // Checking the Password that should have min 8 characters with atleast 1 UpperCase and 1 Numeric Number
         public bool CheckUserPassword(string password)
         {
 
-            string PasswordPattern = @"^(?=.*[A-Z])[a-zA-Z]{8,}$";
+            string PasswordPattern = @"^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{8,}$"; 
 
             Regex Passwordregex = new Regex(PasswordPattern);
 

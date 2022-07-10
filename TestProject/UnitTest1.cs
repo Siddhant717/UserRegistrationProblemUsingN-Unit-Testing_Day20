@@ -14,7 +14,7 @@ namespace TestProject
         [Test]
         public void CheckMobileNumber()
         {
-            string password = "SidDhanT";
+            string password = "SidDhanT23";
             UserRegistration userregist = new UserRegistration();
             var result = userregist.CheckUserPassword(password);
            
