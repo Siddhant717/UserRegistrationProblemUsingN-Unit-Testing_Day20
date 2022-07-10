@@ -14,9 +14,9 @@ namespace TestProject
         [Test]
         public void CheckMobileNumber()
         {
-            string mobnumber = "91 9923443332";
+            string password = "SiDDhanT";
             UserRegistration userregist = new UserRegistration();
-            var result = userregist.CheckMobileNumber(mobnumber);
+            var result = userregist.CheckUserPassword(password);
            
 
             Assert.IsTrue(result);
